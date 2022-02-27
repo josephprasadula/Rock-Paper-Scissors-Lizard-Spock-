@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="uselected">
+            start
+        </div><br>
+        <div class="our">
+            <div class="left">
+                <div class="cover"></div>
+                <div class="icon-div">
+                    <img class="icons" joe="lizard" values='lizard' src="../rock paper game/lizard-apple-touch-icon.png" alt="lizard">
+                </div>
+                <div class="icon-div" values="papeer">
+                    <img class="icons" id="1" src="../rock paper game/paper-apple-touch-icon.png" alt="papeer">
+                </div>
+                <div class="icon-div" value="rock">
+                    <img class="icons" id="2" src="../rock paper game/rock-apple-touch-icon.png" alt="rock">
+                </div>
+                <div class="icon-div" value="scicors">
+                    <img class="icons" id="3" src="../rock paper game/scicors-apple-touch-icon.png" alt="scicors">
+                </div>
+                <div class="icon-div" value="spock">
+                    <img class="icons" id="4" src="../rock paper game/spock-apple-touch-icon.png" alt="spook">
+                </div>
+            </div>
+            <div class="fade"></div>
+        </div>
+        
+        <div class="compselected">
+            start
+        </div><br>
+        <div class="right">
+            
+            <!-- <div class="comp"></div> -->
+            <div class="ricon-div" discription="lizard">
+                <img class="r-icons" src="../rock paper game/lizard-apple-touch-icon.png" alt="lizard">
+            </div>
+            <div class="ricon-div" discription="papeer">
+                <img class="r-icons" src="../rock paper game/paper-apple-touch-icon.png" alt="papeer">
+            </div>
+            <div class="ricon-div" discription="rock">
+                <img class="r-icons" src="../rock paper game/rock-apple-touch-icon.png" alt="rock">
+            </div>
+            <div class="ricon-div" discription="scicors">
+                <img class="r-icons" src="../rock paper game/scicors-apple-touch-icon.png" alt="scicors">
+            </div>
+            <div class="ricon-div" discription="spock">
+                <img class="r-icons" src="../rock paper game/spock-apple-touch-icon.png" alt="spock">
+            </div>
+        </div>
+        <div class="btn">
+            startgame
+        </div>
+        <!-- <div class="middle">
+            <div class="clue">
+                <div class="btn">clue</div><br>
+                <img class="clueimg op" src="../media/project4.png" alt="">
+            </div>
+            <div class="continue op">Continue</div>
+            <h1 class="won op">You Won!!!</h2>
+            <h1 class="loss op">You Lost!!!</h2>
+        </div> -->
+    </div>
+    <style>
+        .container{
+            /* display: flex;
+            justify-content: space-evenly; */
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 36rem;
+        }
+        
+        .left{
+            display: inline-block;
+            display: flex;
+            justify-content: space-between;
+            margin: 3rem 0rem;
+            position: relative;
+        }
+        .cover{
+            position: absolute;
+            z-index: 3;
+            width: 40rem;
+            height: 10rem;
+            content: '';
+            display: none;
+        }
+
+        .right{
+            display: inline-block;
+            display: flex;
+            justify-content: space-between;
+        }
+        .uselected,.compselected{
+            font-size: 2rem;
+            font-weight: 600
+        }
+        .scale{
+            transform: scale(1.3);
+        }
+        .btn{
+            display: inline-block;
+            padding: 5px 10px;
+            border: 3px black solid;
+            font-size: 2rem;
+            background-color: blue;
+            cursor: pointer;
+            border-radius: 3rem;
+            margin-top: 3rem;
+            margin-right: 3rem;
+            visibility: hidden;
+            margin: 3rem 10rem;
+        }
+        .continue{
+            display: inline-block;
+            padding: 5px 10px;
+            border: 3px black solid;
+            font-size: 2rem;
+            background-color: rgb(153, 230, 52);
+            cursor: pointer;
+            border-radius: 3rem;
+            margin-top: 3rem;
+            margin-right: 3rem;
+        }
+        .clueimg{
+            max-width: 15rem;
+        }
+        .op{
+            opacity: 0;
+        }
+        .op1{
+            opacity: 10%;
+        }
+        .icons{
+            max-width: 6rem;
+            cursor: pointer;
+        }
+        .r-icons{
+            max-width: 6rem;
+        }
+        .none{
+            display: none;
+        }
+        .won{
+            color: green;
+            font-weight: 600;
+        }
+        .loss{
+            color: red;
+            font-weight: 600;
+        }
+        /* .r-icons{
+            display: none;
+        } */
+    </style>
+    <script src="../rock paper game/project4.js"></script>
+</body>
+</html>
